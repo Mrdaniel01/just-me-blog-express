@@ -15,7 +15,7 @@ let flippedDivClass = flip ? "text-md-right" : "" ;
 let reverseDirection = post_meta.includes("vpr") ? "d-flex flex-column-reverse" : "";
 %>
 
-<% console.log(post.id); %>
+
 
 <div class="blog-entry ftco-animate <%= horizontalClasses %> <%= reverseDirection %> <%= flippedAClass %>">
   <a href="/posts/<%=post.id%>" class="img <%= horizontalAClasses %> <%= flippedAClass %> " style="background-image: url(images/<%=post.image%>); "></a>
