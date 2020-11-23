@@ -40,7 +40,7 @@
     <ul class="tagcloud">
 
       <% for(let i = 0; i < uniqueTags.length; i++ ) {%>
-        <a href="#" class="tag-cloud-link"> <%= uniqueTags[i] %>  </a>
+        <a href="/filter?tag=<%= uniqueTags[i] %>" class="tag-cloud-link"> <%= uniqueTags[i] %>  </a>
       <% } %>
 
     </ul>
