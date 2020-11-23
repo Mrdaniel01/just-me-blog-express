@@ -7,10 +7,25 @@ const getHomePage = function(req, res) {
 
 const getBlogPost = function({params}, res) {
   let post = postData.find((val) => val.id == params.postid );
+
+  if (!post) {
+    res.redirect("/404")
+  }
+
   res.render("post", { title: post.title, post: post });
 };
 
+const get404 = function(req, res) {
+  res.render('404', {title: "404 - I couldn't find that page."});
+}
+
+const redirect404 = function(req, res) {
+  res.redirect("/404")
+}
+
 module.exports = {
   getHomePage,
-  getBlogPost
+  getBlogPost,
+  get404,
+  redirect404
 };
