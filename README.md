@@ -1,5 +1,3 @@
-# just-me-blog-express
-
 # Just Me ( Blog )
 
 An App made with Express (ejs) end to end (responsive)
