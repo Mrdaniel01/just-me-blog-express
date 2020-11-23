@@ -600,6 +600,7 @@ let postData = [
 let uniqueTags = new Set;
 let categoryData = [];
 
+
 for(let i = 0; i < postData.length; i++) {
     // Add the id's to the post data
     let startingId = 842;

@@ -6,6 +6,8 @@ const indexCtrl = require('../controllers/index');
 /* GET home page. */
 router.get('/', indexCtrl.getHomePage);
 router.get('/posts/:postid', indexCtrl.getBlogPost);
+router.get('/about', indexCtrl.getAbout);
+router.get('/contact', indexCtrl.getContact);
 
 router.get('/404', indexCtrl.get404);
 router.get('*', indexCtrl.redirect404);
